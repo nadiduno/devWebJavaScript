@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa-Qatar2022</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1>Trivia Copa do Mundo</h1>
+
+  <div id="header">
+    <input class="nome" type="text"><br>
+    <button onclick="nomeJogador()">Jogar</button>
+  </div>
+
+  <div id="container">
+    <p class="nomeJogador"></p>
+    
+    <div>
+      <p>Na Copa do Mundo Brasil 2014, Basil ganhou para Venezuela?</p>
+      <input type="radio" onclick="setupResposta(1,'Sim')" name="grupo1" value=false />
+      Sim
+      <input type="radio" onclick="setupResposta(1,'Não')" name="grupo1" value=false />
+      Não
+      <input type="radio" onclick="setupResposta(1,'Não se emfrentaram')" name="grupo1" value=true />
+      Não se emfrentaram
+      <br />
+      <button onclick="verificarResposta(1)"> Responder e ver resultados </button>
+      <br />
+      <p class="menssagem1"></p>
+    </div>
+    
+    <div>
+      <p>O gol mais lindo em um jogo do Qatar 2022 foi do Brasileiro?</p>
+      <input type="radio" onclick="setupResposta(2,'Richarlison')" name="grupo2" value=true />
+      Richarlison
+      <input type="radio" onclick="setupResposta(2,'Neymar')" name="grupo2" value=false />
+      Neymar
+      <input type="radio" onclick="setupResposta(2,'Pele')" name="grupo2" value=false />
+      Pele
+      <br />
+      <button onclick="verificarResposta(2)"> Responder e ver resultados </button>
+      <br />
+      <p class="menssagem2"></p>
+    </div>
+    
+    <div>
+      <p>Brasil será Hexacampeãon na Copa Qatar 2022</p>
+      <input type="radio" onclick="setupResposta(3,'Sim')" name="grupo3" value=false />
+      Sim
+      <input type="radio" onclick="setupResposta(3,'Não')" name="grupo3" value=false />
+      Não
+      <input type="radio" onclick="setupResposta(3,'Eu não sei')" name="grupo3" value=true />
+      Eu não sei
+      <br />
+      <button onclick="verificarResposta(3)"> Responder e ver resultados </button>
+      <br />
+      <p class="menssagem3"></p>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script>document.getElementById("container").style.display = "none"</script>
+</body>
+</html>
